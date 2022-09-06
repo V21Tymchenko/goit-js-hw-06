@@ -17,4 +17,4 @@ const ulEL = document.querySelector('.gallery');
 const image = images.map(({ url, alt }) => {
   return `<li><img  src = "${url}" alt = "${alt}"  width = 400" height = "250" /></li>`;
 });
-ulEL.insertAdjacentHTML('beforeend', image);
+ulEL.insertAdjacentHTML('beforeend', image.join(''));
