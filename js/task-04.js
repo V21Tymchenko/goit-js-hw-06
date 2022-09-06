@@ -1,8 +1,9 @@
-let valueEl = Number(document.querySelector('#value').textContent);
 let counterValue = document.querySelector('#value');
+let valueEl = Number(counterValue.textContent);
 
-const dekrBtn = document.querySelector('#counter').firstElementChild;
-const inkrBtn = document.querySelector('#counter').lastElementChild;
+const counterContainer = document.querySelector('#counter');
+const dekrBtn = counterContainer.firstElementChild;
+const inkrBtn = counterContainer.lastElementChild;
 
 const incrementValue = () => {
   valueEl += 1;
