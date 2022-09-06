@@ -8,7 +8,7 @@ function onFormSubmit(event) {
     elements: { email, password },
   } = event.currentTarget;
 
-  if (email.value === '' || password.value === '') {
+  if (email.value === email.value.trim() || password.value === password.trim()) {
     return alert('Пожалуйста, заполните все поля :)');
   }
   const saveData = { email: email.value, password: password.value };
